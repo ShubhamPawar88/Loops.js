@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let k;
+        let N= parseInt(prompt("Enter Value Of N"));
+        let counter;
+        let sum=0;
+        document.write("prime no from 1 to "+N+"<br>");
+        if(k==0)
+        {
+            document.write("zero is composite number...");
+        }
+        for(k=1;k<=N;k++)
+        {
+            counter=0;
+            for( let i=1;i<=k;i++)
+           {
+              if(k%i==0)
+              {
+                counter++;
+              }
+           }
+           if(counter==2)
+           {
+            document.write(k+"<br>");
+            sum=sum+k;
+           }
+        }
+        document.write("<br><br> sum of all prime number 1to "+N+"="+sum);
+
+    </script>
+</body>
+</html>

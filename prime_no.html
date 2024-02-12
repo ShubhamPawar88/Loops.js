@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //0 1 2 3 4 5 6 7 8 9........
+             //    13 %13
+             //13  %  1 
+             //9  => 1,9,3
+             //prime  no 
+
+             //prime no => 1,2,3,5,7  bcz, these numbers having exactly 2 factors
+
+             //non-prime-no=>  4,6,8,9,10, bcz, these numbers are having more than 2 factors
+
+        let n=7;
+        let counter=0;
+        if(n==0)
+        {
+            document.write("zero is composite number...");
+        }
+        for( let i=1;i<=n;i++)
+        {
+            if(n%i==0)
+            {
+                counter++;
+            }
+        }
+        if(counter==2)
+        {
+            document.write("prime no...");
+        }
+        else{
+            document.write(" non prime no...");
+        }
+
+    </script>
+</body>
+</html>
